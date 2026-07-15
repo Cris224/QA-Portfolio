@@ -20,6 +20,12 @@ SELECT user_id, name, email, password_hash, status, created_at
 ---
 
 ## Scenario 2: E-Commerce Order Placement & Inventory Deduction
+o = orders table
+
+oi = order_items table
+
+p = products table
+
 **UI Action:** A logged-in user adds 2 items of a specific product to their shopping cart and completes a checkout.
 
 **QA Objective:** Verify that the system accurately logs the transaction details across separate relational tables and properly deducts stock from the inventory table.
